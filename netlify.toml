@@ -1,12 +1,15 @@
-# example netlify.toml
+# Netlify configuration for Blowfish Hugo theme
+
 [build]
-  command = "hugo"
-  functions = "netlify/functions"
-  publish = "public"
+  command = "hugo --minify"        # comando de build
+  publish = "public"               # pasta de saída
+  # functions = "netlify/functions" # descomente se usar Netlify Functions
 
 [build.environment]
-  HUGO_VERSION = "0.146.5"
+  HUGO_VERSION = "0.146.5"        # versão do Hugo (ajuste se necessário)
+  HUGO_ENV = "production"         # garante build em modo produção
 
+# Plugins opcionais (exemplo Cypress)
 [[plugins]]
   package = "netlify-plugin-cypress"
 
