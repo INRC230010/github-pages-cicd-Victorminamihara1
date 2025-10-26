@@ -1,0 +1,54 @@
+# =====================
+# Hugo build artifacts
+# =====================
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+/.hugo_build.lock
+hugo_stats.json
+
+# =====================
+# Hugo executables (local binaries)
+# =====================
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# =====================
+# Netlify
+# =====================
+.netlify/
+
+# =====================
+# Node / NPM
+# =====================
+node_modules/
+package-lock.json
+yarn.lock
+
+# =====================
+# OS / Editor files
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Temp / Swap files
+# =====================
+*~
+*.tmp
+*.swp
+
+# =====================
+# IDE / Editor configs
+# =====================
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# =====================
+# GitHub folder exception
+# =====================
+# NÃO ignore a pasta .github (necessária para workflows)
+!.github/
